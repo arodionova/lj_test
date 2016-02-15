@@ -1,0 +1,46 @@
+.panel {
+	position: relative;
+	margin: auto;
+	width: 50%;
+	min-width: 236px;
+	text-align: left;
+	font-size: .75em;
+	border: 1px solid #CC0000;
+	background: #FFFFFF;
+
+	&--header {
+		padding: 1.333em 2em .5em 1.5em;
+
+		.icon {
+			position: absolute;
+			top: .5em;
+			right: 0.6em;
+			width: 2.7em;
+			height: 2.7em;
+			fill: #FFCC00;
+		}
+	}
+
+	&--title {
+		font-size: 1.2em;
+		color: #CC0000;
+	}
+
+	&--content {
+		padding: .5em 1.5em 1.5em;
+		color: #5798B4;
+
+		mark {
+			text-decoration: dashed;
+			background: none;
+			border-bottom: 1px dashed @color;
+			color: inherit;
+		}
+	}
+}
+
+@media (min-width: 600px) {
+	.panel {
+		font-size: 2vw;
+	}
+}

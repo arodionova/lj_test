@@ -1,0 +1,28 @@
+.quote {
+	position: relative;
+	float: left;
+	margin: .2em .8em 0 0;
+	width: 3.2em;
+	height: 3.2em;
+	padding: .7em .4em .7em .6em;
+
+	border-radius: .5em;
+	background: #FFFFE1;
+	box-shadow: 0 0 0 2px #FFE97F;
+
+	svg {
+		fill: #FFCC00;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: -.4em;
+		right: .8em;
+		width: .5em;
+		height: .4em;
+		border-radius: 0 0 0 100%;
+		background: #ffffe1;
+		box-shadow: 0 .13em 0 .1em #ffe97f;
+	}
+}
